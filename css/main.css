@@ -12,7 +12,7 @@ p {
   text-shadow: 0px 0px 3px rgba(255, 255, 255, .7);
 }
 
-.btn {
+.btn-ghost {
   color: #b4fff4;
   border: 3px solid #b4fff4;
   border-radius: 8px;
