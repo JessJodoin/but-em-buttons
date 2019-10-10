@@ -3,13 +3,13 @@ html {
 }
 
 main {
-  background: url("../images/starfield.png") 140px no-repeat;
+  background: url("../images/starfield.png") 0px no-repeat;
 }
 
 h1,
 p {
   color: #fff;
-  text-shadow: 0px 0px 3px rgba(255, 255, 255, .7);
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, .7);
 }
 
 .btn-ghost {
