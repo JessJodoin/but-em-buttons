@@ -3,7 +3,7 @@ html {
 }
 
 .banner {
-  background: url("../images/starfield.png") center center no-repeat;
+  background: url("../images/starfield.png") center center repeat;
 }
 
 h1,
@@ -15,7 +15,7 @@ p {
 .btn-ghost {
   color: #b4fff4;
   border: 3px solid #b4fff4;
-  border-radius: 8px 8px 0 0;
+  border-radius: 10px 10px 0 0;
   position: relative;
 }
 
@@ -36,7 +36,7 @@ p {
 .btn-space {
   position: absolute;
   border: 3px solid #b4fff4;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 10px 10px;
   bottom: -.7em;
   left: -3px;
   width: calc(100% + 6px);
@@ -45,4 +45,10 @@ p {
 
 .btn-ghost:hover .btn-space {
   background-color: rgba(180, 255, 244, .2);
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active {
+
 }
