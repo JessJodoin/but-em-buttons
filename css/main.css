@@ -2,8 +2,8 @@ html {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-main {
-  background: url("../images/starfield.png") 0px no-repeat;
+.banner {
+  background: url("../images/starfield.png") center center no-repeat;
 }
 
 h1,
@@ -15,8 +15,8 @@ p {
 .btn-ghost {
   color: #b4fff4;
   border: 3px solid #b4fff4;
-  border-radius: 8px;
-  padding-right: .4rem;
+  border-radius: 8px 8px 0 0;
+  position: relative;
 }
 
 .btn-ghost:hover {
@@ -25,6 +25,24 @@ p {
   border: 3px solid #b4fff4;
 }
 
+.rocket {
+  right: .2em;
+}
+
+.btn-ghost:hover .rocket {
+  top: 23px;
+}
+
 .btn-space {
-  border-top: 3px solid #b4fff4;
+  position: absolute;
+  border: 3px solid #b4fff4;
+  border-radius: 0 0 8px 8px;
+  bottom: -.7em;
+  left: -3px;
+  width: calc(100% + 6px);
+  min-height: .7em;
+}
+
+.btn-ghost:hover .btn-space {
+  background-color: rgba(180, 255, 244, .2);
 }
