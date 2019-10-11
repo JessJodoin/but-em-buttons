@@ -1,5 +1,5 @@
 html {
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 .banner {
@@ -9,46 +9,60 @@ html {
 h1,
 p {
   color: #fff;
-  text-shadow: 0px 0px 4px rgba(255, 255, 255, .7);
+  text-shadow: 0 0 4px rgba(255, 255, 255, .7);
 }
 
 .btn-ghost {
+  top: 0;
   color: #b4fff4;
-  border: 3px solid #b4fff4;
+  border: 3px solid #90ccc3;
   border-radius: 10px 10px 0 0;
   position: relative;
-}
-
-.btn-ghost:hover {
-  color: #b4fff4;
-  background-color: rgba(180, 255, 244, .2);
-  border: 3px solid #b4fff4;
-}
-
-.rocket {
-  right: .2em;
-}
-
-.btn-ghost:hover .rocket {
-  top: 23px;
-}
-
-.btn-space {
-  position: absolute;
-  border: 3px solid #b4fff4;
-  border-radius: 0 0 10px 10px;
-  bottom: -.7em;
-  left: -3px;
-  width: calc(100% + 6px);
-  min-height: .7em;
-}
-
-.btn-ghost:hover .btn-space {
-  background-color: rgba(180, 255, 244, .2);
+  transition: all .2s linear;
 }
 
 .btn-ghost:hover,
 .btn-ghost:focus,
 .btn-ghost:active {
+  color: #b4fff4;
+  background-color: rgba(180, 255, 244, .2);
+  border-color: #90ccc3;
+}
 
+.btn-ghost:active {
+  top: .3em;
+}
+
+.rocket {
+  right: .2em;
+  transition: all .2s linear;
+}
+
+.btn-ghost:hover .rocket,
+.btn-ghost:focus .rocket,
+.btn-ghost:active .rocket {
+  top: 40%;
+}
+
+.btn-space {
+  position: absolute;
+  border: 3px solid #90ccc3;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  bottom: -.7em;
+  left: -3px;
+  width: calc(100% + 6px);
+  min-height: .7em;
+  transition: all .2s linear;
+}
+
+.btn-ghost:hover .btn-space,
+.btn-ghost:focus .btn-space,
+.btn-ghost:active .btn-space {
+  background-color: rgba(180, 255, 244, .2);
+}
+
+.btn-ghost:active .btn-space {
+  bottom: -.4em;
+  min-height: .4em;
 }
